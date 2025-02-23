@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psycholog Katarzyna Kryńska</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <!-- Zdjęcie profilowe z podanego adresu, obraz wyrównany na środku -->
+            <img src="https://s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/f8640e/f8640ed139258445da7f6a1327da4029_large.jpg"
+                alt="Zdjęcie Katarzyny Kryńskiej" class="profile-photo">
+            <h1 id="headerTitle">Katarzyna Kryńska</h1>
+            <p id="headerSubtitle">Psycholog</p>
+        </div>
+        <div class="language-switcher">
+            <button onclick="switchLanguage('pl')">PL</button>
+            <button onclick="switchLanguage('en')">EN</button>
+            <button onclick="switchLanguage('it')">IT</button>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#o-mnie" data-key="menuAbout">O mnie</a></li>
+            <li><a href="#uslugi" data-key="menuServices">Usługi</a></li>
+            <li><a href="#kontakt" data-key="menuContact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="o-mnie">
+            <h2 data-key="aboutHeader">O mnie</h2>
+            <p data-key="aboutText">
+                Nazywam się Katarzyna Kryńska i jestem doświadczonym psychologiem. Specjalizuję się w psychoterapii
+                indywidualnej oraz terapii par. Moim celem jest pomoc w radzeniu sobie z trudnościami emocjonalnymi,
+                kryzysami życiowymi oraz wyzwaniami w relacjach. Pracuję w atmosferze pełnej empatii, zrozumienia i
+                dyskrecji.
+            </p>
+        </section>
+
+        <section id="uslugi">
+            <h2 data-key="servicesHeader">Usługi</h2>
+            <ul id="services-list">
+                <!-- Lista usług zostanie wstawiona dynamicznie -->
+            </ul>
+            <br>
+            <p data-key="servicesNote">
+                Pełny cennik oraz szczegółowy opis usług znajdziesz na moim profilu na
+            </p><a href="https://www.znanylekarz.pl/z/UxB1cX" target="_blank" rel="noopener noreferrer"
+                class="contact-link">ZnanyLekarz</a>.
+            </p>
+        </section>
+
+        <section id="kontakt">
+            <h2 data-key="contactHeader">Kontakt</h2>
+            <p data-key="contactText">Zapraszam do kontaktu w celu umówienia wizyty lub uzyskania dodatkowych
+                informacji.</p>
+            <p>
+                <strong data-key="phoneLabel">Telefon</strong>:
+                <a href="tel:+48606787587" class="contact-link">+48 606 787 587</a>
+            </p>
+            <p>
+                <strong data-key="emailLabel">Email</strong>:
+                <a href="mailto:my_email_here@gmail.com" class="contact-link">my_email_here@gmail.com</a>
+            </p>
+            <p><strong data-key="addressLabel">Adres</strong>: Straszyn, woj. pomorskie</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-key="footerText">© Katarzyna Kryńska. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Obiekt z tłumaczeniami
+        const translations = {
+            "pl": {
+                pageTitle: "Psycholog Katarzyna Kryńska",
+                headerTitle: "Katarzyna Kryńska",
+                headerSubtitle: "Psycholog",
+                menuAbout: "O mnie",
+                menuServices: "Usługi",
+                menuContact: "Kontakt",
+                aboutHeader: "O mnie",
+                aboutText: "Nazywam się Katarzyna Kryńska i jestem doświadczonym psychologiem. Specjalizuję się w psychoterapii indywidualnej oraz terapii par. Moim celem jest pomoc w radzeniu sobie z trudnościami emocjonalnymi, kryzysami życiowymi oraz wyzwaniami w relacjach. Pracuję w atmosferze pełnej empatii, zrozumienia i dyskrecji.",
+                servicesHeader: "Usługi",
+                servicesList: [
+                    "Psychoterapia indywidualna",
+                    "Psychoterapia par",
+                    "Konsultacje psychologiczne",
+                    "Terapia rodzin",
+                    "Wsparcie w sytuacjach kryzysowych"
+                ],
+                servicesNote: "Pełny cennik oraz szczegółowy opis usług znajdziesz na moim profilu na",
+                contactHeader: "Kontakt",
+                contactText: "Zapraszam do kontaktu w celu umówienia wizyty lub uzyskania dodatkowych informacji.",
+                phoneLabel: "Telefon",
+                emailLabel: "Email",
+                addressLabel: "Adres",
+                footerText: "© 2025 Katarzyna Kryńska. Wszelkie prawa zastrzeżone."
+            },
+            "en": {
+                pageTitle: "Psychologist Katarzyna Kryńska",
+                headerTitle: "Katarzyna Kryńska",
+                headerSubtitle: "Psychologist",
+                menuAbout: "About",
+                menuServices: "Services",
+                menuContact: "Contact",
+                aboutHeader: "About Me",
+                aboutText: "My name is Katarzyna Kryńska and I am an experienced psychologist. I specialize in individual psychotherapy and couples therapy. My goal is to help cope with emotional difficulties, life crises and challenges in relationships. I work in an atmosphere full of empathy, understanding, and confidentiality.",
+                servicesHeader: "Services",
+                servicesList: [
+                    "Individual psychotherapy",
+                    "Couples therapy",
+                    "Psychological consultations",
+                    "Family therapy",
+                    "Crisis support"
+                ],
+                servicesNote: "You can find the full price list and detailed service descriptions on my profile at",
+                contactHeader: "Contact",
+                contactText: "Feel free to contact me to schedule an appointment or obtain additional information.",
+                phoneLabel: "Phone",
+                emailLabel: "Email",
+                addressLabel: "Address",
+                footerText: "© 2025 Katarzyna Kryńska. All rights reserved."
+            },
+            "it": {
+                pageTitle: "Psicologa Katarzyna Kryńska",
+                headerTitle: "Katarzyna Kryńska",
+                headerSubtitle: "Psicologa",
+                menuAbout: "Chi sono",
+                menuServices: "Servizi",
+                menuContact: "Contatto",
+                aboutHeader: "Chi sono",
+                aboutText: "Mi chiamo Katarzyna Kryńska e sono una psicologa esperta. Mi specializzo in psicoterapia individuale e di coppia. Il mio obiettivo è aiutare a gestire difficoltà emotive, crisi di vita e sfide nelle relazioni. Lavoro in un'atmosfera di empatia, comprensione e riservatezza.",
+                servicesHeader: "Servizi",
+                servicesList: [
+                    "Psicoterapia individuale",
+                    "Psicoterapia di coppia",
+                    "Consulenze psicologiche",
+                    "Terapia familiare",
+                    "Supporto in situazioni di crisi"
+                ],
+                servicesNote: "Puoi trovare il listino completo e la descrizione dettagliata dei servizi nel mio profilo su",
+                contactHeader: "Contatto",
+                contactText: "Contattami per fissare un appuntamento o per ulteriori informazioni.",
+                phoneLabel: "Telefono",
+                emailLabel: "Email",
+                addressLabel: "Indirizzo",
+                footerText: "© 2025 Katarzyna Kryńska. Tutti i diritti riservati."
+            }
+        };
+
+        // Funkcja aktualizująca zawartość strony według wybranego języka
+        function updateContent(lang) {
+            document.title = translations[lang].pageTitle;
+            document.getElementById("headerTitle").textContent = translations[lang].headerTitle;
+            document.getElementById("headerSubtitle").textContent = translations[lang].headerSubtitle;
+            document.querySelector('[data-key="menuAbout"]').textContent = translations[lang].menuAbout;
+            document.querySelector('[data-key="menuServices"]').textContent = translations[lang].menuServices;
+            document.querySelector('[data-key="menuContact"]').textContent = translations[lang].menuContact;
+            document.querySelector('[data-key="aboutHeader"]').textContent = translations[lang].aboutHeader;
+            document.querySelector('[data-key="aboutText"]').textContent = translations[lang].aboutText;
+            document.querySelector('[data-key="servicesHeader"]').textContent = translations[lang].servicesHeader;
+
+            // Aktualizacja listy usług
+            const servicesList = document.getElementById("services-list");
+            servicesList.innerHTML = "";
+            translations[lang].servicesList.forEach(service => {
+                const li = document.createElement("li");
+                li.textContent = service;
+                servicesList.appendChild(li);
+            });
+
+            document.querySelector('[data-key="servicesNote"]').textContent = translations[lang].servicesNote;
+            document.querySelector('[data-key="contactHeader"]').textContent = translations[lang].contactHeader;
+            document.querySelector('[data-key="contactText"]').textContent = translations[lang].contactText;
+            document.querySelector('[data-key="phoneLabel"]').textContent = translations[lang].phoneLabel;
+            document.querySelector('[data-key="emailLabel"]').textContent = translations[lang].emailLabel;
+            document.querySelector('[data-key="addressLabel"]').textContent = translations[lang].addressLabel;
+            document.querySelector('[data-key="footerText"]').textContent = translations[lang].footerText;
+        }
+
+        // Funkcja przełączająca język – zapisuje preferencję w localStorage
+        function switchLanguage(lang) {
+            localStorage.setItem("preferredLanguage", lang);
+            updateContent(lang);
+        }
+
+        // Po załadowaniu dokumentu wykrywamy preferowany język
+        document.addEventListener("DOMContentLoaded", function () {
+            let preferredLanguage = localStorage.getItem("preferredLanguage");
+            if (!preferredLanguage) {
+                const userLang = navigator.language || navigator.userLanguage;
+                if (userLang.startsWith("pl")) {
+                    preferredLanguage = "pl";
+                } else if (userLang.startsWith("it")) {
+                    preferredLanguage = "it";
+                } else {
+                    preferredLanguage = "en";
+                }
+            }
+            updateContent(preferredLanguage);
+        });
+    </script>
+</body>
+
+</html>
