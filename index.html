@@ -303,6 +303,30 @@
                             </select>
                         </div>
 
+                        <!-- Usługa (Service) dropdown -->
+                        <div class="form-group">
+                            <label class="form-label" for="service" data-key="contact.form.service">Usługa</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="" disabled selected hidden>--</option>
+                                <option value="individual" data-key="contact.form.service.individual">Konsultacja
+                                    indywidualna (200 PLN)</option>
+                                <option value="online" data-key="contact.form.service.online">Konsultacja online (200
+                                    PLN)</option>
+                            </select>
+                        </div>
+
+                        <!-- Lokalizacja (Location) dropdown, initially hidden -->
+                        <div class="form-group" id="location-group" style="display:none;">
+                            <label class="form-label" for="location"
+                                data-key="contact.form.location">Lokalizacja</label>
+                            <select id="location" name="location" class="form-control">
+                                <option value="straszyn" data-key="contact.form.location.straszyn">Jana Pawła II 5,
+                                    Straszyn</option>
+                                <option value="gdansk" data-key="contact.form.location.gdansk">Jesionowa 9/2, Gdańsk
+                                </option>
+                            </select>
+                        </div>
+
                         <div class="form-group">
                             <label class="form-label" for="message" data-key="contact.form.message">Wiadomość</label>
                             <textarea id="message" name="message" class="form-control" rows="4" required></textarea>

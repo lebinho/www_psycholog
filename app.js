@@ -78,6 +78,13 @@ const translations = {
         'contact.form.lang.en': 'Angielski',
         'contact.form.message': 'Wiadomość',
         'contact.form.submit': 'Wyślij wiadomość',
+        'contact.form.service': 'Usługa',
+        'contact.form.service.individual': 'Konsultacja indywidualna (200 PLN)',
+        'contact.form.service.online': 'Konsultacja online (200 PLN)',
+        'contact.form.location': 'Lokalizacja',
+        'contact.form.location.straszyn': 'Jana Pawła II 5, Straszyn',
+        'contact.form.location.gdansk': 'Jesionowa 9/2, Gdańsk',
+        'contact.form.location.online': 'Online',
 
         'footer.description': 'Psycholog • Terapia skoncentrowana na rozwiązaniach',
         'footer.location': 'Gdańsk • Straszyn • Pomorskie',
@@ -160,6 +167,13 @@ const translations = {
         'contact.form.lang.en': 'Inglese',
         'contact.form.message': 'Messaggio',
         'contact.form.submit': 'Invia messaggio',
+        'contact.form.service': 'Servizio',
+        'contact.form.service.individual': 'Consulenza individuale (200 PLN)',
+        'contact.form.service.online': 'Consulenza online (200 PLN)',
+        'contact.form.location': 'Ubicazione',
+        'contact.form.location.straszyn': 'Jana Pawła II 5, Straszyn',
+        'contact.form.location.gdansk': 'Jesionowa 9/2, Danzica',
+        'contact.form.location.online': 'Online',
 
         'footer.description': 'Psicologa • Terapia focalizzata sulle soluzioni',
         'footer.location': 'Danzica • Straszyn • Pomerania',
@@ -242,6 +256,13 @@ const translations = {
         'contact.form.lang.en': 'English',
         'contact.form.message': 'Message',
         'contact.form.submit': 'Send message',
+        'contact.form.service': 'Service',
+        'contact.form.service.individual': 'Individual consultation (200 PLN)',
+        'contact.form.service.online': 'Online consultation (200 PLN)',
+        'contact.form.location': 'Location',
+        'contact.form.location.straszyn': 'Jana Pawła II 5, Straszyn',
+        'contact.form.location.gdansk': 'Jesionowa 9/2, Gdansk',
+        'contact.form.location.online': 'Online',
 
         'footer.description': 'Psychologist • Solution-focused therapy',
         'footer.location': 'Gdansk • Straszyn • Pomeranian',
@@ -315,6 +336,22 @@ class LanguageManager {
                 element.textContent = translation;
             }
         });
+
+        // Translate select options for service and location
+        this.translateSelectOptions('service');
+        this.translateSelectOptions('location');
+        this.translateSelectOptions('language');
+    }
+
+    translateSelectOptions(selectId) {
+        const select = document.getElementById(selectId);
+        if (!select) return;
+        Array.from(select.options).forEach(option => {
+            const key = option.getAttribute('data-key');
+            if (key && translations[this.currentLanguage][key]) {
+                option.textContent = translations[this.currentLanguage][key];
+            }
+        });
     }
 
     updateHTMLLang() {
@@ -386,22 +423,69 @@ class ContactForm {
     constructor() {
         this.form = document.getElementById('contactForm');
         this.messageDiv = document.getElementById('formMessage');
+        this.serviceSelect = document.getElementById('service');
+        this.locationSelect = document.getElementById('location');
+        this.locationGroup = document.getElementById('location-group');
         this.bindEventListeners();
+        this.updateLocationVisibility();
     }
 
     bindEventListeners() {
         this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+        if (this.serviceSelect) {
+            this.serviceSelect.addEventListener('change', () => this.updateLocationVisibility());
+        }
+    }
+
+    updateLocationVisibility() {
+        if (!this.serviceSelect || !this.locationSelect || !this.locationGroup) return;
+        const service = this.serviceSelect.value;
+        if (!service) {
+            this.locationGroup.style.display = 'none';
+            this.locationSelect.value = '';
+        } else if (service === 'online') {
+            this.locationGroup.style.display = 'none';
+            // Set value to 'online' for submission
+            this.locationSelect.innerHTML = '';
+            const opt = document.createElement('option');
+            opt.value = 'online';
+            opt.setAttribute('data-key', 'contact.form.location.online');
+            opt.textContent = this.getTranslation('contact.form.location.online');
+            this.locationSelect.appendChild(opt);
+            this.locationSelect.value = 'online';
+        } else if (service === 'individual') {
+            this.locationGroup.style.display = '';
+            // Only show Straszyn and Gdańsk
+            this.locationSelect.innerHTML = '';
+            [
+                { value: 'straszyn', key: 'contact.form.location.straszyn' },
+                { value: 'gdansk', key: 'contact.form.location.gdansk' }
+            ].forEach(loc => {
+                const opt = document.createElement('option');
+                opt.value = loc.value;
+                opt.setAttribute('data-key', loc.key);
+                opt.textContent = this.getTranslation(loc.key);
+                this.locationSelect.appendChild(opt);
+            });
+            this.locationSelect.value = 'straszyn';
+        }
     }
 
     async handleSubmit(e) {
         e.preventDefault();
 
         const formData = new FormData(this.form);
+        // Ensure location is set for online service
+        if (this.serviceSelect.value === 'online') {
+            formData.set('location', 'online');
+        }
         const data = {
             name: formData.get('name'),
             email: formData.get('email'),
             phone: formData.get('phone'),
             language: formData.get('language'),
+            service: formData.get('service'),
+            location: formData.get('location'),
             message: formData.get('message')
         };
 
@@ -410,9 +494,16 @@ class ContactForm {
             this.showMessage('error', this.getTranslation('form.error.required'));
             return;
         }
-
         if (!this.isValidEmail(data.email)) {
             this.showMessage('error', this.getTranslation('form.error.email'));
+            return;
+        }
+        if (!data.service) {
+            this.showMessage('error', this.getTranslation('form.error.required'));
+            return;
+        }
+        if (data.service === 'individual' && !data.location) {
+            this.showMessage('error', this.getTranslation('form.error.required'));
             return;
         }
 
@@ -423,10 +514,10 @@ class ContactForm {
         submitBtn.disabled = true;
 
         try {
-            // Simulate form submission (replace with actual email service)
             await this.submitForm(data);
             this.showMessage('success', this.getTranslation('form.success'));
             this.form.reset();
+            this.updateLocationVisibility();
         } catch (error) {
             this.showMessage('error', this.getTranslation('form.error.general'));
         } finally {
@@ -436,29 +527,10 @@ class ContactForm {
     }
 
     async submitForm(data) {
-        // Email obfuscation - construct email dynamically
-        const emailParts = ['kryns', 'katarzyna', 'gmail', 'com'];
-        const email = `${emailParts[0]}${emailParts[1]}@${emailParts[2]}.${emailParts[3]}`;
-
-        // Create mailto link with form data
-        const subject = encodeURIComponent(`Nowy formularz www - ${data.language.toUpperCase()}`);
-        const body = encodeURIComponent(`
-Imię i nazwisko: ${data.name}
-Email: ${data.email}
-Telefon: ${data.phone || 'Nie podano'}
-Preferowany język: ${data.language}
-
-Wiadomość:
-${data.message}
-        `);
-
-        const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
-
-        // For demonstration, we'll use mailto (in production, use a proper email service)
-        return new Promise((resolve) => {
-            window.location.href = mailtoLink;
-            setTimeout(resolve, 1000);
-        });
+        // Replace the URL below with your backend endpoint that handles email sending
+        // For demonstration, we'll just resolve after a short delay
+        // Example: await fetch('/api/contact', { method: 'POST', body: JSON.stringify(data), headers: {'Content-Type': 'application/json'} });
+        return new Promise((resolve) => setTimeout(resolve, 1000));
     }
 
     isValidEmail(email) {
@@ -478,6 +550,15 @@ ${data.message}
     }
 
     getTranslation(key) {
+        // Try translations object first
+        const lang = document.querySelector('.lang-btn.active')?.dataset?.lang || 'pl';
+        if (
+            translations[lang] &&
+            translations[lang][key]
+        ) {
+            return translations[lang][key];
+        }
+        // Fallback to messages for validation
         const messages = {
             'form.error.required': {
                 pl: 'Proszę wypełnić wszystkie wymagane pola.',
@@ -505,9 +586,7 @@ ${data.message}
                 en: 'Sending...'
             }
         };
-
-        const currentLang = document.querySelector('.lang-btn.active')?.dataset?.lang || 'pl';
-        return messages[key]?.[currentLang] || messages[key]?.['pl'] || 'Error';
+        return messages[key]?.[lang] || messages[key]?.['pl'] || 'Error';
     }
 }
 
