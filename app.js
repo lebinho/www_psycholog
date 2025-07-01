@@ -527,10 +527,26 @@ class ContactForm {
     }
 
     async submitForm(data) {
-        // Replace the URL below with your backend endpoint that handles email sending
-        // For demonstration, we'll just resolve after a short delay
-        // Example: await fetch('/api/contact', { method: 'POST', body: JSON.stringify(data), headers: {'Content-Type': 'application/json'} });
-        return new Promise((resolve) => setTimeout(resolve, 1000));
+        // Send the form to Formspree
+        const payload = {
+            name: data.name,
+            email: data.email,
+            phone: data.phone,
+            language: data.language,
+            service: data.service,
+            location: data.location,
+            message: data.message
+        };
+        const response = await fetch('https://formspree.io/f/xgvydjdq', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json'
+            },
+            body: new FormData(this.form)
+        });
+        if (!response.ok) {
+            throw new Error('Formspree error');
+        }
     }
 
     isValidEmail(email) {
