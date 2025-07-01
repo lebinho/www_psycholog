@@ -1,214 +1,333 @@
 <!DOCTYPE html>
-<html lang="pl">
-
+<html lang="pl" itemscope itemtype="https://schema.org/PsychologyPractice">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psycholog Katarzyna Kryńska</title>
+    <title>mgr Katarzyna Kryńska - Psycholog Gdańsk | Terapia Skoncentrowana na Rozwiązaniach</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Psycholog mgr Katarzyna Kryńska - Gdańsk, Straszyn. Terapia skoncentrowana na rozwiązaniach dla dorosłych, dzieci i młodzieży. Konsultacje online i stacjonarne.">
+    <meta name="keywords" content="psycholog Gdańsk, psycholog Straszyn, terapia skoncentrowana na rozwiązaniach, psychoterapia, konsultacje psychologiczne, pomoc psychologiczna pomorskie">
+    <meta name="author" content="mgr Katarzyna Kryńska">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Local SEO -->
+    <meta name="geo.region" content="PL-PM">
+    <meta name="geo.placename" content="Gdańsk, Straszyn">
+    <meta name="geo.position" content="54.3520;18.6466">
+    <meta name="ICBM" content="54.3520, 18.6466">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="mgr Katarzyna Kryńska - Psycholog Gdańsk">
+    <meta property="og:description" content="Profesjonalna pomoc psychologiczna w Gdańsku i okolicach. Terapia skoncentrowana na rozwiązaniach.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/f8640e/f8640ed139258445da7f6a1327da4029_large.jpg">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Psychologist",
+        "name": "mgr Katarzyna Kryńska",
+        "jobTitle": "Psycholog",
+        "description": "Specjalista w dziedzinie terapii skoncentrowanej na rozwiązaniach",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jana Pawła II 5",
+            "addressLocality": "Straszyn",
+            "addressRegion": "Pomorskie",
+            "postalCode": "83-010",
+            "addressCountry": "PL"
+        },
+        "areaServed": [
+            "Gdańsk", "Straszyn", "Pruszcz Gdański", "Żukowo", "Kolbudy", "Tczew", "Starogard Gdański"
+        ],
+        "availableLanguage": ["pl", "it", "en"],
+        "priceRange": "200 PLN",
+        "image": "https://s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/f8640e/f8640ed139258445da7f6a1327da4029_large.jpg"
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <div class="container header-container">
-            <!-- Zdjęcie profilowe z podanego adresu, obraz wyrównany na środku -->
-            <img src="https://s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/f8640e/f8640ed139258445da7f6a1327da4029_large.jpg"
-                alt="Zdjęcie Katarzyny Kryńskiej" class="profile-photo">
-            <h1 id="headerTitle">Katarzyna Kryńska</h1>
-            <p id="headerSubtitle">Psycholog</p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <span class="nav-name" data-key="nav.name">mgr Katarzyna Kryńska</span>
+                    <span class="nav-title" data-key="nav.title">Psycholog</span>
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="#about" class="nav-link" data-key="nav.about">O mnie</a>
+                    <a href="#services" class="nav-link" data-key="nav.services">Usługi</a>
+                    <a href="#approach" class="nav-link" data-key="nav.approach">Podejście</a>
+                    <a href="#contact" class="nav-link" data-key="nav.contact">Kontakt</a>
+                </div>
+                
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="pl">PL</button>
+                    <button class="lang-btn" data-lang="it">IT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
         </div>
-        <div class="language-switcher">
-            <button onclick="switchLanguage('pl')">PL</button>
-            <button onclick="switchLanguage('en')">EN</button>
-            <button onclick="switchLanguage('it')">IT</button>
-        </div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#o-mnie" data-key="menuAbout">O mnie</a></li>
-            <li><a href="#uslugi" data-key="menuServices">Usługi</a></li>
-            <li><a href="#kontakt" data-key="menuContact">Kontakt</a></li>
-        </ul>
     </nav>
 
-    <main class="container">
-        <section id="o-mnie">
-            <h2 data-key="aboutHeader">O mnie</h2>
-            <p data-key="aboutText">
-                Nazywam się Katarzyna Kryńska i jestem doświadczonym psychologiem. Specjalizuję się w psychoterapii
-                indywidualnej oraz terapii par. Moim celem jest pomoc w radzeniu sobie z trudnościami emocjonalnymi,
-                kryzysami życiowymi oraz wyzwaniami w relacjach. Pracuję w atmosferze pełnej empatii, zrozumienia i
-                dyskrecji.
-            </p>
-        </section>
-
-        <section id="uslugi">
-            <h2 data-key="servicesHeader">Usługi</h2>
-            <ul id="services-list">
-                <!-- Lista usług zostanie wstawiona dynamicznie -->
-            </ul>
-            <br>
-            <p data-key="servicesNote">
-                Pełny cennik oraz szczegółowy opis usług znajdziesz na moim profilu na
-            </p><a href="https://www.znanylekarz.pl/z/UxB1cX" target="_blank" rel="noopener noreferrer"
-                class="contact-link">ZnanyLekarz</a>.
-            </p>
-        </section>
-
-        <section id="kontakt">
-            <h2 data-key="contactHeader">Kontakt</h2>
-            <p data-key="contactText">Zapraszam do kontaktu w celu umówienia wizyty lub uzyskania dodatkowych
-                informacji.</p>
-            <p>
-                <strong data-key="phoneLabel">Telefon</strong>:
-                <a href="tel:+48606787587" class="contact-link">+48 606 787 587</a>
-            </p>
-            <p>
-                <strong data-key="emailLabel">Email</strong>:
-                <a href="mailto:krynskatarzyna@gmail.com" class="contact-link">krynskatarzyna@gmail.com</a>
-            </p>
-        </section>
-    </main>
-
-    <footer>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
         <div class="container">
-            <p data-key="footerText">© Katarzyna Kryńska. Wszelkie prawa zastrzeżone.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-key="hero.title">Profesjonalna pomoc psychologiczna</h1>
+                    <h2 data-key="hero.subtitle">Terapia skoncentrowana na rozwiązaniach</h2>
+                    <p data-key="hero.description">Wspieram dorosłych, dzieci i młodzież w odkrywaniu wewnętrznej siły i budowaniu zdrowego, satysfakcjonującego życia.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn--primary" data-key="hero.contact">Umów konsultację</a>
+                        <a href="#about" class="btn btn--outline" data-key="hero.learn">Dowiedz się więcej</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://s3-eu-west-1.amazonaws.com/znanylekarz.pl/doctor/f8640e/f8640ed139258445da7f6a1327da4029_large.jpg" 
+                         alt="mgr Katarzyna Kryńska - Psycholog" 
+                         class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-key="about.title">O mnie</h2>
+                <p data-key="about.subtitle">Poznaj moje doświadczenie i podejście do terapii</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-item">
+                        <h3 data-key="about.education.title">Wykształcenie</h3>
+                        <p data-key="about.education.description">Absolwentka Uniwersytetu Humanistycznospołecznego SWPS w Sopocie. Specjalizacja w terapii skoncentrowanej na rozwiązaniach.</p>
+                    </div>
+                    
+                    <div class="about-item">
+                        <h3 data-key="about.experience.title">Doświadczenie</h3>
+                        <p data-key="about.experience.description">Ponad 2 lata doświadczenia w pracy z dorosłymi, dziećmi, młodzieżą oraz rodzicami. Prowadzę konsultacje indywidualne oraz warsztaty psychoedukacyjne.</p>
+                    </div>
+                    
+                    <div class="about-item">
+                        <h3 data-key="about.languages.title">Języki</h3>
+                        <p data-key="about.languages.description">Konsultacje prowadzę w języku polskim, włoskim oraz angielskim, co pozwala mi wspierać klientów z różnych kultur.</p>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">200 PLN</div>
+                        <div class="stat-label" data-key="about.stats.price">Koszt sesji</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label" data-key="about.stats.languages">Języki</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label" data-key="about.stats.experience">Lata doświadczenia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section--alt" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-key="services.title">Usługi</h2>
+                <p data-key="services.subtitle">Kompleksowa pomoc psychologiczna dostosowana do Twoich potrzeb</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">👨‍👩‍👧‍👦</div>
+                    <h3 data-key="services.adults.title">Dorośli</h3>
+                    <ul class="service-list">
+                        <li data-key="services.adults.item1">Trudności emocjonalne (depresja, obniżony nastrój)</li>
+                        <li data-key="services.adults.item2">Stany lękowe i ataki paniki</li>
+                        <li data-key="services.adults.item3">Stres i wypalenie zawodowe</li>
+                        <li data-key="services.adults.item4">Problemy w relacjach</li>
+                        <li data-key="services.adults.item5">Kryzysy życiowe i zmiany</li>
+                        <li data-key="services.adults.item6">Rozwój osobisty</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">👶</div>
+                    <h3 data-key="services.children.title">Dzieci i młodzież</h3>
+                    <ul class="service-list">
+                        <li data-key="services.children.item1">Trudności emocjonalne</li>
+                        <li data-key="services.children.item2">Zaburzenia zachowania</li>
+                        <li data-key="services.children.item3">Budowanie pewności siebie</li>
+                        <li data-key="services.children.item4">Problemy szkolne</li>
+                        <li data-key="services.children.item5">Relacje z rówieśnikami</li>
+                        <li data-key="services.children.item6">Wsparcie dla rodziców</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3 data-key="services.format.title">Formy terapii</h3>
+                    <ul class="service-list">
+                        <li data-key="services.format.item1">Konsultacje indywidualne</li>
+                        <li data-key="services.format.item2">Terapia online</li>
+                        <li data-key="services.format.item3">Konsultacje stacjonarne</li>
+                        <li data-key="services.format.item4">Warsztaty psychoedukacyjne</li>
+                        <li data-key="services.format.item5">Wsparcie rodziców</li>
+                        <li data-key="services.format.item6">Psychoedukacja</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="section" id="approach">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-key="approach.title">Moje podejście</h2>
+                <p data-key="approach.subtitle">Terapia skoncentrowana na rozwiązaniach</p>
+            </div>
+            
+            <div class="approach-content">
+                <div class="approach-main">
+                    <p data-key="approach.description">Specjalizuję się w Terapii Skoncentrowanej na Rozwiązaniach, która wspiera klientów w odkrywaniu ich wewnętrznej siły i sprawczości. Wierzę, że kluczem do zdrowego i satysfakcjonującego życia jest zrozumienie siebie oraz swoich możliwości.</p>
+                </div>
+                
+                <div class="approach-principles">
+                    <div class="principle-item">
+                        <h4 data-key="approach.principle1.title">Orientacja na rozwiązania</h4>
+                        <p data-key="approach.principle1.description">Koncentrujemy się na tym, co działa i jak można wykorzystać Twoje zasoby do osiągnięcia celów.</p>
+                    </div>
+                    
+                    <div class="principle-item">
+                        <h4 data-key="approach.principle2.title">Współpraca</h4>
+                        <p data-key="approach.principle2.description">Jesteś ekspertem od swojego życia. Razem odkrywamy najlepsze ścieżki do pozytywnych zmian.</p>
+                    </div>
+                    
+                    <div class="principle-item">
+                        <h4 data-key="approach.principle3.title">Szacunek i zrozumienie</h4>
+                        <p data-key="approach.principle3.description">Każdy klient jest unikalny. Terapia jest dostosowana do Twoich indywidualnych potrzeb i celów.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section--alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-key="contact.title">Kontakt</h2>
+                <p data-key="contact.subtitle">Skontaktuj się ze mną, aby umówić konsultację</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4 data-key="contact.locations.title">Lokalizacje</h4>
+                        <p>📍 Jana Pawła II 5, Straszyn</p>
+                        <p>📍 Jesionowa 9/2, Gdańsk</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h4 data-key="contact.price.title">Cennik</h4>
+                        <p data-key="contact.price.consultation">Konsultacja indywidualna: 200 PLN</p>
+                        <p data-key="contact.price.online">Konsultacja online: 200 PLN</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h4 data-key="contact.languages.title">Języki konsultacji</h4>
+                        <p>🇵🇱 Polski</p>
+                        <p>🇮🇹 Włoski</p>
+                        <p>🇬🇧 Angielski</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label" for="name" data-key="contact.form.name">Imię i nazwisko</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="email" data-key="contact.form.email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="phone" data-key="contact.form.phone">Telefon (opcjonalnie)</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="language" data-key="contact.form.language">Preferowany język konsultacji</label>
+                            <select id="language" name="language" class="form-control">
+                                <option value="pl" data-key="contact.form.lang.pl">Polski</option>
+                                <option value="it" data-key="contact.form.lang.it">Włoski</option>
+                                <option value="en" data-key="contact.form.lang.en">Angielski</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="message" data-key="contact.form.message">Wiadomość</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full-width" data-key="contact.form.submit">Wyślij wiadomość</button>
+                    </form>
+                    
+                    <div class="form-message" id="formMessage" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>mgr Katarzyna Kryńska</h4>
+                    <p data-key="footer.description">Psycholog • Terapia skoncentrowana na rozwiązaniach</p>
+                    <p data-key="footer.location">Gdańsk • Straszyn • Pomorskie</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#about" data-key="nav.about">O mnie</a>
+                    <a href="#services" data-key="nav.services">Usługi</a>
+                    <a href="#approach" data-key="nav.approach">Podejście</a>
+                    <a href="#contact" data-key="nav.contact">Kontakt</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-key="footer.copyright">&copy; 2025 mgr Katarzyna Kryńska. Wszystkie prawa zastrzeżone.</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Obiekt z tłumaczeniami
-        const translations = {
-            "pl": {
-                pageTitle: "Psycholog Katarzyna Kryńska",
-                headerTitle: "Katarzyna Kryńska",
-                headerSubtitle: "Psycholog",
-                menuAbout: "O mnie",
-                menuServices: "Usługi",
-                menuContact: "Kontakt",
-                aboutHeader: "O mnie",
-                aboutText: "Nazywam się Katarzyna Kryńska i jestem doświadczonym psychologiem. Specjalizuję się w psychoterapii indywidualnej oraz terapii par. Moim celem jest pomoc w radzeniu sobie z trudnościami emocjonalnymi, kryzysami życiowymi oraz wyzwaniami w relacjach. Pracuję w atmosferze pełnej empatii, zrozumienia i dyskrecji.",
-                servicesHeader: "Usługi",
-                servicesList: [
-                    "Psychoterapia indywidualna",
-                    "Psychoterapia par",
-                    "Konsultacje psychologiczne",
-                    "Terapia rodzin",
-                    "Wsparcie w sytuacjach kryzysowych"
-                ],
-                servicesNote: "Pełny cennik oraz szczegółowy opis usług znajdziesz na moim profilu na",
-                contactHeader: "Kontakt",
-                contactText: "Zapraszam do kontaktu w celu umówienia wizyty lub uzyskania dodatkowych informacji.",
-                phoneLabel: "Telefon",
-                emailLabel: "Email",
-                addressLabel: "Adres",
-                footerText: "©  Katarzyna Kryńska. Wszelkie prawa zastrzeżone."
-            },
-            "en": {
-                pageTitle: "Psychologist Katarzyna Kryńska",
-                headerTitle: "Katarzyna Kryńska",
-                headerSubtitle: "Psychologist",
-                menuAbout: "About",
-                menuServices: "Services",
-                menuContact: "Contact",
-                aboutHeader: "About Me",
-                aboutText: "My name is Katarzyna Kryńska and I am an experienced psychologist. I specialize in individual psychotherapy and couples therapy. My goal is to help cope with emotional difficulties, life crises and challenges in relationships. I work in an atmosphere full of empathy, understanding, and confidentiality.",
-                servicesHeader: "Services",
-                servicesList: [
-                    "Individual psychotherapy",
-                    "Couples therapy",
-                    "Psychological consultations",
-                    "Family therapy",
-                    "Crisis support"
-                ],
-                servicesNote: "You can find the full price list and detailed service descriptions on my profile at",
-                contactHeader: "Contact",
-                contactText: "Feel free to contact me to schedule an appointment or obtain additional information.",
-                phoneLabel: "Phone",
-                emailLabel: "Email",
-                addressLabel: "Address",
-                footerText: "©  Katarzyna Kryńska. All rights reserved."
-            },
-            "it": {
-                pageTitle: "Psicologa Katarzyna Kryńska",
-                headerTitle: "Katarzyna Kryńska",
-                headerSubtitle: "Psicologa",
-                menuAbout: "Chi sono",
-                menuServices: "Servizi",
-                menuContact: "Contatto",
-                aboutHeader: "Chi sono",
-                aboutText: "Mi chiamo Katarzyna Kryńska e sono una psicologa esperta. Mi specializzo in psicoterapia individuale e di coppia. Il mio obiettivo è aiutare a gestire difficoltà emotive, crisi di vita e sfide nelle relazioni. Lavoro in un'atmosfera di empatia, comprensione e riservatezza.",
-                servicesHeader: "Servizi",
-                servicesList: [
-                    "Psicoterapia individuale",
-                    "Psicoterapia di coppia",
-                    "Consulenze psicologiche",
-                    "Terapia familiare",
-                    "Supporto in situazioni di crisi"
-                ],
-                servicesNote: "Puoi trovare il listino completo e la descrizione dettagliata dei servizi nel mio profilo su",
-                contactHeader: "Contatto",
-                contactText: "Contattami per fissare un appuntamento o per ulteriori informazioni.",
-                phoneLabel: "Telefono",
-                emailLabel: "Email",
-                addressLabel: "Indirizzo",
-                footerText: "©  Katarzyna Kryńska. Tutti i diritti riservati."
-            }
-        };
-
-        // Funkcja aktualizująca zawartość strony według wybranego języka
-        function updateContent(lang) {
-            document.title = translations[lang].pageTitle;
-            document.getElementById("headerTitle").textContent = translations[lang].headerTitle;
-            document.getElementById("headerSubtitle").textContent = translations[lang].headerSubtitle;
-            document.querySelector('[data-key="menuAbout"]').textContent = translations[lang].menuAbout;
-            document.querySelector('[data-key="menuServices"]').textContent = translations[lang].menuServices;
-            document.querySelector('[data-key="menuContact"]').textContent = translations[lang].menuContact;
-            document.querySelector('[data-key="aboutHeader"]').textContent = translations[lang].aboutHeader;
-            document.querySelector('[data-key="aboutText"]').textContent = translations[lang].aboutText;
-            document.querySelector('[data-key="servicesHeader"]').textContent = translations[lang].servicesHeader;
-
-            // Aktualizacja listy usług
-            const servicesList = document.getElementById("services-list");
-            servicesList.innerHTML = "";
-            translations[lang].servicesList.forEach(service => {
-                const li = document.createElement("li");
-                li.textContent = service;
-                servicesList.appendChild(li);
-            });
-
-            document.querySelector('[data-key="servicesNote"]').textContent = translations[lang].servicesNote;
-            document.querySelector('[data-key="contactHeader"]').textContent = translations[lang].contactHeader;
-            document.querySelector('[data-key="contactText"]').textContent = translations[lang].contactText;
-            document.querySelector('[data-key="phoneLabel"]').textContent = translations[lang].phoneLabel;
-            document.querySelector('[data-key="emailLabel"]').textContent = translations[lang].emailLabel;
-            document.querySelector('[data-key="addressLabel"]').textContent = translations[lang].addressLabel;
-            document.querySelector('[data-key="footerText"]').textContent = translations[lang].footerText;
-        }
-
-        // Funkcja przełączająca język – zapisuje preferencję w localStorage
-        function switchLanguage(lang) {
-            localStorage.setItem("preferredLanguage", lang);
-            updateContent(lang);
-        }
-
-        // Po załadowaniu dokumentu wykrywamy preferowany język
-        document.addEventListener("DOMContentLoaded", function () {
-            let preferredLanguage = localStorage.getItem("preferredLanguage");
-            if (!preferredLanguage) {
-                const userLang = navigator.language || navigator.userLanguage;
-                if (userLang.startsWith("pl")) {
-                    preferredLanguage = "pl";
-                } else if (userLang.startsWith("it")) {
-                    preferredLanguage = "it";
-                } else {
-                    preferredLanguage = "en";
-                }
-            }
-            updateContent(preferredLanguage);
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="app.js"></script>
 </body>
-
 </html>
