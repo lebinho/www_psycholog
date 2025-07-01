@@ -9,13 +9,13 @@ const translations = {
         'nav.services': 'Usługi',
         'nav.approach': 'Podejście',
         'nav.contact': 'Kontakt',
-        
+
         'hero.title': 'Profesjonalna pomoc psychologiczna',
         'hero.subtitle': 'Terapia skoncentrowana na rozwiązaniach',
         'hero.description': 'Wspieram dorosłych, dzieci i młodzież w odkrywaniu wewnętrznej siły i budowaniu zdrowego, satysfakcjonującego życia.',
         'hero.contact': 'Umów konsultację',
         'hero.learn': 'Dowiedz się więcej',
-        
+
         'about.title': 'O mnie',
         'about.subtitle': 'Poznaj moje doświadczenie i podejście do terapii',
         'about.education.title': 'Wykształcenie',
@@ -27,7 +27,7 @@ const translations = {
         'about.stats.price': 'Koszt sesji',
         'about.stats.languages': 'Języki',
         'about.stats.experience': 'Lata doświadczenia',
-        
+
         'services.title': 'Usługi',
         'services.subtitle': 'Kompleksowa pomoc psychologiczna dostosowana do Twoich potrzeb',
         'services.adults.title': 'Dorośli',
@@ -51,7 +51,7 @@ const translations = {
         'services.format.item4': 'Warsztaty psychoedukacyjne',
         'services.format.item5': 'Wsparcie rodziców',
         'services.format.item6': 'Psychoedukacja',
-        
+
         'approach.title': 'Moje podejście',
         'approach.subtitle': 'Terapia skoncentrowana na rozwiązaniach',
         'approach.description': 'Specjalizuję się w Terapii Skoncentrowanej na Rozwiązaniach, która wspiera klientów w odkrywaniu ich wewnętrznej siły i sprawczości. Wierzę, że kluczem do zdrowego i satysfakcjonującego życia jest zrozumienie siebie oraz swoich możliwości.',
@@ -61,7 +61,7 @@ const translations = {
         'approach.principle2.description': 'Jesteś ekspertem od swojego życia. Razem odkrywamy najlepsze ścieżki do pozytywnych zmian.',
         'approach.principle3.title': 'Szacunek i zrozumienie',
         'approach.principle3.description': 'Każdy klient jest unikalny. Terapia jest dostosowana do Twoich indywidualnych potrzeb i celów.',
-        
+
         'contact.title': 'Kontakt',
         'contact.subtitle': 'Skontaktuj się ze mną, aby umówić konsultację',
         'contact.locations.title': 'Lokalizacje',
@@ -78,12 +78,12 @@ const translations = {
         'contact.form.lang.en': 'Angielski',
         'contact.form.message': 'Wiadomość',
         'contact.form.submit': 'Wyślij wiadomość',
-        
+
         'footer.description': 'Psycholog • Terapia skoncentrowana na rozwiązaniach',
         'footer.location': 'Gdańsk • Straszyn • Pomorskie',
         'footer.copyright': '© 2025 mgr Katarzyna Kryńska. Wszystkie prawa zastrzeżone.'
     },
-    
+
     it: {
         'nav.name': 'dott.ssa Katarzyna Kryńska',
         'nav.title': 'Psicologa',
@@ -91,13 +91,13 @@ const translations = {
         'nav.services': 'Servizi',
         'nav.approach': 'Approccio',
         'nav.contact': 'Contatto',
-        
+
         'hero.title': 'Aiuto psicologico professionale',
         'hero.subtitle': 'Terapia focalizzata sulle soluzioni',
         'hero.description': 'Supporto adulti, bambini e adolescenti nello scoprire la loro forza interiore e costruire una vita sana e soddisfacente.',
         'hero.contact': 'Prenota consulenza',
         'hero.learn': 'Scopri di più',
-        
+
         'about.title': 'Chi sono',
         'about.subtitle': 'Conosci la mia esperienza e il mio approccio alla terapia',
         'about.education.title': 'Formazione',
@@ -109,7 +109,7 @@ const translations = {
         'about.stats.price': 'Costo sessione',
         'about.stats.languages': 'Lingue',
         'about.stats.experience': 'Anni esperienza',
-        
+
         'services.title': 'Servizi',
         'services.subtitle': 'Aiuto psicologico completo adattato alle tue esigenze',
         'services.adults.title': 'Adulti',
@@ -133,7 +133,7 @@ const translations = {
         'services.format.item4': 'Workshop psicoeducativi',
         'services.format.item5': 'Supporto genitori',
         'services.format.item6': 'Psicoeducazione',
-        
+
         'approach.title': 'Il mio approccio',
         'approach.subtitle': 'Terapia focalizzata sulle soluzioni',
         'approach.description': 'Mi specializzo nella Terapia Focalizzata sulle Soluzioni, che supporta i clienti nel scoprire la loro forza interiore e capacità di azione. Credo che la chiave per una vita sana e soddisfacente sia la comprensione di sé e delle proprie possibilità.',
@@ -143,7 +143,7 @@ const translations = {
         'approach.principle2.description': 'Sei l\'esperto della tua vita. Insieme scopriamo i migliori percorsi verso cambiamenti positivi.',
         'approach.principle3.title': 'Rispetto e comprensione',
         'approach.principle3.description': 'Ogni cliente è unico. La terapia è adattata alle tue esigenze e obiettivi individuali.',
-        
+
         'contact.title': 'Contatto',
         'contact.subtitle': 'Contattami per prenotare una consulenza',
         'contact.locations.title': 'Ubicazioni',
@@ -160,12 +160,12 @@ const translations = {
         'contact.form.lang.en': 'Inglese',
         'contact.form.message': 'Messaggio',
         'contact.form.submit': 'Invia messaggio',
-        
+
         'footer.description': 'Psicologa • Terapia focalizzata sulle soluzioni',
         'footer.location': 'Danzica • Straszyn • Pomerania',
         'footer.copyright': '© 2025 dott.ssa Katarzyna Kryńska. Tutti i diritti riservati.'
     },
-    
+
     en: {
         'nav.name': 'Katarzyna Kryńska, M.A.',
         'nav.title': 'Psychologist',
@@ -173,13 +173,13 @@ const translations = {
         'nav.services': 'Services',
         'nav.approach': 'Approach',
         'nav.contact': 'Contact',
-        
+
         'hero.title': 'Professional psychological help',
         'hero.subtitle': 'Solution-focused therapy',
         'hero.description': 'I support adults, children and adolescents in discovering their inner strength and building a healthy, fulfilling life.',
         'hero.contact': 'Book consultation',
         'hero.learn': 'Learn more',
-        
+
         'about.title': 'About me',
         'about.subtitle': 'Get to know my experience and approach to therapy',
         'about.education.title': 'Education',
@@ -191,7 +191,7 @@ const translations = {
         'about.stats.price': 'Session cost',
         'about.stats.languages': 'Languages',
         'about.stats.experience': 'Years experience',
-        
+
         'services.title': 'Services',
         'services.subtitle': 'Comprehensive psychological help tailored to your needs',
         'services.adults.title': 'Adults',
@@ -215,7 +215,7 @@ const translations = {
         'services.format.item4': 'Psychoeducational workshops',
         'services.format.item5': 'Parental support',
         'services.format.item6': 'Psychoeducation',
-        
+
         'approach.title': 'My approach',
         'approach.subtitle': 'Solution-focused therapy',
         'approach.description': 'I specialize in Solution-Focused Therapy, which supports clients in discovering their inner strength and agency. I believe that the key to a healthy and fulfilling life is understanding yourself and your possibilities.',
@@ -225,7 +225,7 @@ const translations = {
         'approach.principle2.description': 'You are the expert on your life. Together we discover the best paths to positive changes.',
         'approach.principle3.title': 'Respect and understanding',
         'approach.principle3.description': 'Each client is unique. Therapy is tailored to your individual needs and goals.',
-        
+
         'contact.title': 'Contact',
         'contact.subtitle': 'Contact me to book a consultation',
         'contact.locations.title': 'Locations',
@@ -242,7 +242,7 @@ const translations = {
         'contact.form.lang.en': 'English',
         'contact.form.message': 'Message',
         'contact.form.submit': 'Send message',
-        
+
         'footer.description': 'Psychologist • Solution-focused therapy',
         'footer.location': 'Gdansk • Straszyn • Pomeranian',
         'footer.copyright': '© 2025 Katarzyna Kryńska, M.A. All rights reserved.'
@@ -256,56 +256,56 @@ class LanguageManager {
         this.initializeLanguage();
         this.bindEventListeners();
     }
-    
+
     async initializeLanguage() {
         // Try to detect country/language
         const detectedLang = await this.detectLanguage();
         this.setLanguage(detectedLang);
     }
-    
+
     async detectLanguage() {
         try {
             // Try browser language first
             const browserLang = navigator.language.toLowerCase();
-            
+
             if (browserLang.startsWith('pl')) return 'pl';
             if (browserLang.startsWith('it')) return 'it';
-            
+
             // Try IP geolocation as fallback
             try {
                 const response = await fetch('https://ipapi.co/json/');
                 const data = await response.json();
-                
+
                 if (data.country_code === 'PL') return 'pl';
                 if (data.country_code === 'IT') return 'it';
-                
+
                 return 'en'; // Default for other countries
             } catch (error) {
                 console.log('Geolocation failed, using browser language');
-                return browserLang.startsWith('pl') ? 'pl' : 
-                       browserLang.startsWith('it') ? 'it' : 'en';
+                return browserLang.startsWith('pl') ? 'pl' :
+                    browserLang.startsWith('it') ? 'it' : 'en';
             }
         } catch (error) {
             console.log('Language detection failed, defaulting to Polish');
             return 'pl';
         }
     }
-    
+
     setLanguage(lang) {
         if (!translations[lang]) lang = 'pl';
-        
+
         this.currentLanguage = lang;
         this.updateLanguageButtons();
         this.translatePage();
         this.updateHTMLLang();
     }
-    
+
     updateLanguageButtons() {
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.classList.toggle('active', btn.dataset.lang === this.currentLanguage);
         });
     }
-    
+
     translatePage() {
         const elements = document.querySelectorAll('[data-key]');
         elements.forEach(element => {
@@ -316,14 +316,14 @@ class LanguageManager {
             }
         });
     }
-    
+
     updateHTMLLang() {
         document.documentElement.lang = this.currentLanguage;
-        
+
         // Update meta tags
         const title = document.querySelector('title');
         const description = document.querySelector('meta[name="description"]');
-        
+
         if (this.currentLanguage === 'it') {
             title.textContent = 'dott.ssa Katarzyna Kryńska - Psicologa Danzica | Terapia Focalizzata sulle Soluzioni';
             description.content = 'Psicologa dott.ssa Katarzyna Kryńska - Danzica, Straszyn. Terapia focalizzata sulle soluzioni per adulti, bambini e adolescenti. Consultazioni online e in presenza.';
@@ -332,7 +332,7 @@ class LanguageManager {
             description.content = 'Psychologist Katarzyna Kryńska, M.A. - Gdansk, Straszyn. Solution-focused therapy for adults, children and adolescents. Online and in-person consultations.';
         }
     }
-    
+
     bindEventListeners() {
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.addEventListener('click', () => {
@@ -349,7 +349,7 @@ class Navigation {
         this.bindEventListeners();
         this.handleScroll();
     }
-    
+
     bindEventListeners() {
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -357,7 +357,7 @@ class Navigation {
                 e.preventDefault();
                 const targetId = link.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     const offsetTop = targetElement.offsetTop - 80; // Account for fixed navbar
                     window.scrollTo({
@@ -367,11 +367,11 @@ class Navigation {
                 }
             });
         });
-        
+
         // Handle scroll for navbar styling
         window.addEventListener('scroll', () => this.handleScroll());
     }
-    
+
     handleScroll() {
         if (window.scrollY > 50) {
             this.navbar.classList.add('scrolled');
@@ -388,14 +388,14 @@ class ContactForm {
         this.messageDiv = document.getElementById('formMessage');
         this.bindEventListeners();
     }
-    
+
     bindEventListeners() {
         this.form.addEventListener('submit', (e) => this.handleSubmit(e));
     }
-    
+
     async handleSubmit(e) {
         e.preventDefault();
-        
+
         const formData = new FormData(this.form);
         const data = {
             name: formData.get('name'),
@@ -404,24 +404,24 @@ class ContactForm {
             language: formData.get('language'),
             message: formData.get('message')
         };
-        
+
         // Basic validation
         if (!data.name || !data.email || !data.message) {
             this.showMessage('error', this.getTranslation('form.error.required'));
             return;
         }
-        
+
         if (!this.isValidEmail(data.email)) {
             this.showMessage('error', this.getTranslation('form.error.email'));
             return;
         }
-        
+
         // Show loading state
         const submitBtn = this.form.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = this.getTranslation('form.sending');
         submitBtn.disabled = true;
-        
+
         try {
             // Simulate form submission (replace with actual email service)
             await this.submitForm(data);
@@ -434,14 +434,14 @@ class ContactForm {
             submitBtn.disabled = false;
         }
     }
-    
+
     async submitForm(data) {
         // Email obfuscation - construct email dynamically
-        const emailParts = ['katarzyna', 'krynska', 'gmail', 'com'];
-        const email = `${emailParts[0]}.${emailParts[1]}@${emailParts[2]}.${emailParts[3]}`;
-        
+        const emailParts = ['kryns', 'katarzyna', 'gmail', 'com'];
+        const email = `${emailParts[0]}${emailParts[1]}@${emailParts[2]}.${emailParts[3]}`;
+
         // Create mailto link with form data
-        const subject = encodeURIComponent(`Nowa wiadomość z strony internetowej - ${data.language.toUpperCase()}`);
+        const subject = encodeURIComponent(`Nowy formularz www - ${data.language.toUpperCase()}`);
         const body = encodeURIComponent(`
 Imię i nazwisko: ${data.name}
 Email: ${data.email}
@@ -451,32 +451,32 @@ Preferowany język: ${data.language}
 Wiadomość:
 ${data.message}
         `);
-        
+
         const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
-        
+
         // For demonstration, we'll use mailto (in production, use a proper email service)
         return new Promise((resolve) => {
             window.location.href = mailtoLink;
             setTimeout(resolve, 1000);
         });
     }
-    
+
     isValidEmail(email) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     }
-    
+
     showMessage(type, message) {
         this.messageDiv.className = `form-message ${type}`;
         this.messageDiv.textContent = message;
         this.messageDiv.style.display = 'block';
-        
+
         // Auto-hide after 5 seconds
         setTimeout(() => {
             this.messageDiv.style.display = 'none';
         }, 5000);
     }
-    
+
     getTranslation(key) {
         const messages = {
             'form.error.required': {
@@ -505,7 +505,7 @@ ${data.message}
                 en: 'Sending...'
             }
         };
-        
+
         const currentLang = document.querySelector('.lang-btn.active')?.dataset?.lang || 'pl';
         return messages[key]?.[currentLang] || messages[key]?.['pl'] || 'Error';
     }
@@ -516,13 +516,13 @@ class PageEffects {
     constructor() {
         this.observeElements();
     }
-    
+
     observeElements() {
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-        
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -530,7 +530,7 @@ class PageEffects {
                 }
             });
         }, observerOptions);
-        
+
         // Observe sections for fade-in effects
         document.querySelectorAll('.section, .hero').forEach(section => {
             observer.observe(section);
@@ -544,7 +544,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new Navigation();
     new ContactForm();
     new PageEffects();
-    
+
     // Add some fade-in animations CSS if not already present
     if (!document.querySelector('#fadeInStyles')) {
         const style = document.createElement('style');
@@ -562,7 +562,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         document.head.appendChild(style);
     }
-    
+
     // Trigger initial visibility for hero section
     setTimeout(() => {
         document.querySelector('.hero')?.classList.add('visible');
@@ -599,9 +599,9 @@ if (window.innerHeight > 600) {
         transition: opacity 0.3s ease;
         z-index: 1000;
     `;
-    
+
     document.body.appendChild(scrollTopBtn);
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 500) {
             scrollTopBtn.style.opacity = '1';
