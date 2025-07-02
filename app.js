@@ -21,7 +21,7 @@ const translations = {
         'about.education.title': 'Wykształcenie',
         'about.education.description': 'Absolwentka Uniwersytetu Humanistycznospołecznego SWPS w Sopocie. Specjalizacja w terapii skoncentrowanej na rozwiązaniach.',
         'about.experience.title': 'Doświadczenie',
-        'about.experience.description': 'Ponad 2 lata doświadczenia w pracy z dorosłymi, dziećmi, młodzieżą oraz rodzicami. Prowadzę konsultacje indywidualne oraz warsztaty psychoedukacyjne.',
+        'about.experience.description': 'Posiadam doświadczenie w pracy z dorosłymi,młodzieżą, dziećmi oraz rodzicami. Prowadzę konsultacje indywidualne oraz warsztaty psychoedukacyjne.',
         'about.languages.title': 'Języki',
         'about.languages.description': 'Konsultacje prowadzę w języku polskim, włoskim oraz angielskim, co pozwala mi wspierać klientów z różnych kultur.',
         'about.stats.price': 'Koszt sesji',
@@ -110,7 +110,7 @@ const translations = {
         'about.education.title': 'Formazione',
         'about.education.description': 'Laureata presso l\'Università SWPS di Sopot. Specializzazione in terapia focalizzata sulle soluzioni.',
         'about.experience.title': 'Esperienza',
-        'about.experience.description': 'Oltre 2 anni di esperienza nel lavoro con adulti, bambini, adolescenti e genitori. Conduco consultazioni individuali e workshop psicoeducativi.',
+        'about.experience.description': 'Ho esperienza nel lavorare con adulti, adolescenti, bambini e genitori. Conduco consulenze individuali e laboratori psicoeducativi.',
         'about.languages.title': 'Lingue',
         'about.languages.description': 'Conduco consultazioni in polacco, italiano e inglese, permettendomi di supportare clienti di diverse culture.',
         'about.stats.price': 'Costo sessione',
@@ -199,7 +199,7 @@ const translations = {
         'about.education.title': 'Education',
         'about.education.description': 'Graduate of SWPS University in Sopot. Specialization in solution-focused therapy.',
         'about.experience.title': 'Experience',
-        'about.experience.description': 'Over 2 years of experience working with adults, children, adolescents and parents. I conduct individual consultations and psychoeducational workshops.',
+        'about.experience.description': 'I have experience working with adults, adolescents, children, and parents. I conduct individual consultations and psychoeducational workshops.',
         'about.languages.title': 'Languages',
         'about.languages.description': 'I conduct consultations in Polish, Italian and English, allowing me to support clients from different cultures.',
         'about.stats.price': 'Session cost',
@@ -421,7 +421,7 @@ class Navigation {
 // Contact form with email obfuscation
 class ContactForm {
     constructor() {
-        this.form = document.getElementById('contactForm');
+        this.form = document.getElemabout.experience.descriptionentById('contactForm');
         this.messageDiv = document.getElementById('formMessage');
         this.serviceSelect = document.getElementById('service');
         this.locationSelect = document.getElementById('location');
