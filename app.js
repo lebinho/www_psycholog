@@ -85,6 +85,7 @@ const translations = {
         'contact.form.location.straszyn': 'Jana Pawła II 5, Straszyn',
         'contact.form.location.gdansk': 'Jesionowa 9/2, Gdańsk',
         'contact.form.location.online': 'Online',
+        'contact.additionalinfo.title': 'Dodatkowe informacje na',
 
         'footer.description': 'Psycholog • Terapia skoncentrowana na rozwiązaniach',
         'footer.location': 'Gdańsk • Straszyn • Pomorskie',
@@ -174,6 +175,7 @@ const translations = {
         'contact.form.location.straszyn': 'Jana Pawła II 5, Straszyn',
         'contact.form.location.gdansk': 'Jesionowa 9/2, Danzica',
         'contact.form.location.online': 'Online',
+        'contact.additionalinfo.title': 'Ulteriori informacje su',
 
         'footer.description': 'Psicologa • Terapia focalizzata sulle soluzioni',
         'footer.location': 'Danzica • Straszyn • Pomerania',
@@ -263,6 +265,7 @@ const translations = {
         'contact.form.location.straszyn': 'Jana Pawła II 5, Straszyn',
         'contact.form.location.gdansk': 'Jesionowa 9/2, Gdansk',
         'contact.form.location.online': 'Online',
+        'contact.additionalinfo.title': 'More information at',
 
         'footer.description': 'Psychologist • Solution-focused therapy',
         'footer.location': 'Gdansk • Straszyn • Pomeranian',
