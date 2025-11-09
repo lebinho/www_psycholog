@@ -1,5 +1,2 @@
 tu piersszy text
-aAS
-AA
-DSA
-DA
+poprawiony tekst 2 linijka
